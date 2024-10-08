@@ -27,6 +27,13 @@
 body {
     min-height: 100vh;
     color: var(--secondary-color);
+    padding-top: 24px;
+}
+
+@media (width > 700px) {
+    body {
+        padding-top: 40px;
+    }
 }
 
 h1, h2, h3 {
@@ -54,7 +61,11 @@ p {
 }
 
 nav {
-
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    padding: 0 24px;
+    margin: auto;
 }
 
 nav img {
