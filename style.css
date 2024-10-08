@@ -52,3 +52,42 @@ p {
     line-height: 1.6;
     color: var(--secondary-color-light);
 }
+
+nav {
+
+}
+
+nav img {
+    width: 50px;
+    height: 50px;
+}
+
+.button {
+    padding: 16px 26px;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    white-space: nowrap;
+    border: none;
+    border-radius: 8px;
+    color: var(--white);
+    cursor: pointer;
+    transition: all 0.3s;
+    display: block;
+}
+
+.button.blue {
+    background-color: var(--secondary-color-light);
+}
+
+.button.blue:hover {
+    background-color: var(--secondary-color);
+}
+
+.button.orange {
+    background-color: var(--primary-color-light);
+}
+
+.button.orange:hover {
+    background-color: var(--primary-color);
+}
