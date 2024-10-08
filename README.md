@@ -5,9 +5,6 @@
 ## Website content
 
 **Fuel Coffee**
-**Order Today**
-
-**Fuel Coffee**
 
 Start your mornings with the world's best coffee. Try our expertly curated artisan coffee from our best roasters delivered directly to your door.
 
