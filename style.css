@@ -102,3 +102,28 @@ nav img {
 .button.orange:hover {
     background-color: var(--primary-color);
 }
+
+.main-grid {
+    display: grid;
+    grid-template-columns: 0 auto 0;
+}
+
+.left-col {
+    background-color: var(--grey);
+    height: 240px;
+}
+
+.mid-col {
+
+}
+
+.right-col {
+    background-color: var(--grey);
+    height: 240px;
+}
+
+@media (width > 1200px) {
+    .main-grid {
+        grid-template-columns: 1fr min(1200px) 1fr;
+    }
+}
