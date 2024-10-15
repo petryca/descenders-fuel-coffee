@@ -3,18 +3,13 @@
 :root {
     font-family: Barlow, sans-serif !important;
     font-size: 16px;
+    line-height: 1.625;
     --primary-color: #F16718;
     --primary-color-light: #FF9B62;
     --secondary-color: #162542;
     --secondary-color-light: #7B8BAD;
     --grey: #E8EFF2;
     --white: #FFFFFF;
-}
-
-@media (width > 700px) {
-    :root {
-        font-size: 18px;
-    }
 }
 
 * {
@@ -25,52 +20,55 @@
 }
 
 body {
-    min-height: 100vh;
-    color: var(--secondary-color);
-    padding-top: 24px;
+    color: var(--secondary-color-light);
+    padding-block: 24px;
 }
 
 @media (width > 700px) {
     body {
-        padding-top: 40px;
+        padding-block: 40px;
     }
 }
 
 h1, h2, h3 {
     text-transform: uppercase;
     font-weight: 900;
-    line-height: 1.1;
+    color: var(--secondary-color);
 }
 
 h1 {
     font-size: 3.5rem;
+    line-height: 1;
 }
 
 h2 {
-    font-size: 2.25rem;
+    font-size: 2rem;
+    line-height: 1.125;
 }
 
 h3 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
+    line-height: 1.75;
 }
 
-p {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: var(--secondary-color-light);
+img.responsive {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
-    max-width: 1200px;
-    padding: 0 24px;
-    margin: auto;
+    margin-inline: 24px;
 }
 
-nav img {
+.logo {
     width: 50px;
     height: 50px;
+    display: block;
 }
 
 .button {
