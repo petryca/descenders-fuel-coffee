@@ -118,6 +118,17 @@ nav {
     border-bottom-left-radius: 20px;
 }
 
+.hero {
+    grid-column: 2 / 3;
+    display: grid;
+    gap: 30px;
+    margin-left: 24px;
+}
+
+.hero>div:first-child {
+    margin-right: 24px;
+}
+
 @media (width > 700px) {
 
     body {
