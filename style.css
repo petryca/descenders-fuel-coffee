@@ -127,6 +127,18 @@ nav {
 
 .hero>div:first-child {
     margin-right: 24px;
+    display: grid;
+    gap: 30px;
+    justify-items: left;
+    align-items: center;
+}
+
+.hero>div:last-child {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    overflow: hidden;
+    min-height: 300px;
+    max-height: 450px;
 }
 
 @media (width > 700px) {
@@ -137,6 +149,11 @@ nav {
 
     nav {
         margin-inline: 40px;
+    }
+
+    .hero {
+        margin-left: 40px;
+        grid-template-columns: 2fr 3fr;
     }
 }
 
@@ -150,5 +167,13 @@ nav {
 
     .main-grid {
         grid-template-columns: 1fr 1280px 1fr;
+    }
+
+    .hero {
+        margin-inline: 30px;
+    }
+
+    .hero>div:last-child {
+        border-radius: 20px;    
     }
 }
