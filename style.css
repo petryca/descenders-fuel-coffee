@@ -141,6 +141,11 @@ nav {
     max-height: 450px;
 }
 
+.content {
+    grid-column: 2 / 3;
+    display: grid;
+}
+
 @media (width > 700px) {
 
     body {
