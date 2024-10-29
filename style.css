@@ -199,6 +199,10 @@ nav {
     justify-self: center;
 }
 
+footer {
+    text-align: center;
+}
+
 @media (width > 700px) {
 
     .hero>div:first-child,
