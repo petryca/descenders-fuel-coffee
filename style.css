@@ -108,6 +108,7 @@ nav {
     height: 240px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+    align-self: end;
 }
 
 .right-col {
@@ -147,14 +148,13 @@ nav {
     gap: 30px;
     grid-template-columns: 1fr 2fr;
     grid-auto-rows: auto;
-    text-align: center;
 }
 
 .content>div:nth-child(1),
 .content>div:nth-child(2) {
     overflow: hidden;
     min-height: 200px;
-    max-height: 320px;
+    max-height: 400px;
 }
 
 .content>div:nth-child(1) {
@@ -170,6 +170,9 @@ nav {
 .content>div:nth-child(3) {
     grid-column: 1 / 3;
     margin-inline: 24px;
+    display: grid;
+    gap: 30px;
+    text-align: center;
 }
 
 @media (width > 700px) {
@@ -201,6 +204,11 @@ nav {
 
     .content>div:nth-child(1) {
         border-radius: 20px;
+    }
+
+    .content>div:nth-child(3) {
+        text-align: left;
+        grid-template-columns: 1fr 2fr;
     }
 }
 
@@ -234,5 +242,7 @@ nav {
 
     .content>div:nth-child(3) {
         grid-column: 4 / 5;
+        grid-template-columns: auto;
+        align-content: center;
     }
 }
