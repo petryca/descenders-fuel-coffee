@@ -180,6 +180,25 @@ nav {
     text-align: center;
 }
 
+.icons {
+    margin: 30px 24px;
+    display: grid;
+    gap: 30px;
+    align-items: start;
+}
+
+.icons>div {
+    text-align: center;
+    display: grid;
+    gap: 24px;
+}
+
+.icons img {
+    width: 100px;
+    height: 100px;
+    justify-self: center;
+}
+
 @media (width > 700px) {
 
     .hero>div:first-child,
@@ -215,6 +234,11 @@ nav {
         text-align: left;
         grid-template-columns: 1fr 2fr;
     }
+
+    .icons {
+        margin-inline: 40px;
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media (width > 1280px) {
@@ -249,5 +273,12 @@ nav {
         grid-column: 4 / 5;
         grid-template-columns: auto;
         align-content: center;
+    }
+
+    .icons {
+        width: 1220px;
+        margin-inline: 30px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-self: center;
     }
 }
