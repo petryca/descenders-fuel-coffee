@@ -160,6 +160,11 @@ nav {
 .content>div:nth-child(1) {
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+    background-color: var(--primary-color);
+}
+
+.content>div:nth-child(1) img {
+    mix-blend-mode: multiply;
 }
 
 .content>div:nth-child(2) {
